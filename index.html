@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos Etiqueta Form</title>
+</head>
+
+<body>
+  <h1>Atributos de Etiqueta Form</h1>
+  <div id="accept-charset">
+    <h2>atributo accept-charset</h2>
+    <form action="" accept-charset="UTF-8">
+    </form>
+  </div>
+  <hr />
+  <div id="action">
+    <h2>atributo action</h2>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post">
+      <input type="text" name="nombre" id="name">
+      <input type="submit">
+    </form>
+  </div>
+  <hr />
+  <div id="autocomplete">
+    <h2>atributo autocomplete</h2>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post" autocomplete="off">
+      <input type="text" name="nombre" id="name" placeholder="autocomplete off">
+      <input type="submit">
+    </form>
+    <br />
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post" autocomplete="on">
+      <input type="text" name="nombre" id="name" placeholder="autocomplete on">
+      <input type="submit">
+    </form>
+  </div>
+  <hr />
+  <div id="enctype">
+    <h2>atributo enctype</h2>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post"
+      enctype="application/x-www-form-urlencoded">
+      <input type="file" name="archivo">
+      <input type="submit">
+    </form>
+    <br />
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="archivo">
+      <input type="submit">
+    </form>
+    <br />
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post" enctype="text/plain">
+      <input type="file" name="archivo">
+      <input type="submit">
+    </form>
+  </div>
+  <hr />
+  <div id="method">
+    <h2>Atributo method</h2>
+    <h3>POST</h3>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="post" autocomplete="off">
+      <p>Usuario: <input type="text" name="usuario" id="user"></p>
+      <p>Contraseña: <input type="text" name="constraseña" id="pass"></p>
+      <input type="submit">
+    </form>
+    <br />
+    <h3>GET</h3>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="get" autocomplete="off">
+      <p>Usuario: <input type="text" name="usuario" id="user" autocomplete="off"></p>
+      <p>Contraseña: <input type="text" name="constraseña" id="pass"></p>
+      <input type="submit">
+    </form>
+  </div>
+  <hr />
+  <div id="name">
+    <h2>Atributo name</h2>
+    <form name="registro user" action="https://www.htmlquick.com/es/form-result.php" method="get" autocomplete="off">
+      <p>Usuario: <input type="text" name="usuario" id="user" autocomplete="off"></p>
+      <p>Contraseña: <input type="text" name="constraseña" id="pass"></p>
+      <input type="submit">
+    </form>
+  </div>
+  <hr />
+  <div id="target">
+    <h2>Atributo target</h2>
+    <form action="https://www.htmlquick.com/es/form-result.php" method="get" autocomplete="off" target="_blank">
+      <p>Usuario: <input type="text" name="usuario" id="user" autocomplete="off"></p>
+      <p>Contraseña: <input type="password" name="constraseña" id="pass"></p>
+      <input type="submit">
+    </form>
+  </div>
+</body>
+
+</html>
+
+<!-- https://www.htmlquick.com/es/form-result.php -->
